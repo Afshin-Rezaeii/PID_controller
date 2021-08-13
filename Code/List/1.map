@@ -1,0 +1,73 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+kp                                                                                0x0260       4
+ki                                                                                0x0264       4
+kd                                                                                0x0268       4
+P_term                                                                            0x026C       4
+I_term                                                                            0x0270       4
+D_term                                                                            0x0274       4
+last_I_term                                                                       0x0278       4
+encoder_int                                                                       0x027C       4
+rpm                                                                               0x0280       4
+set_point                                                                         0x0284       4
+error                                                                             0x0288       4
+last_error                                                                        0x028C       4
+PID_term                                                                          0x0290       4
+pid                                                                               0x0294       4
+data                                                                              0x0298       5
+st                                                                                0x029D      33
+str                                                                               0x02BE      33
+_seed                                                                             0x02DF       4
+_base_y                                                                           0x02E3       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+m                                                                                 R2.0      1bit
+key                                                                               R5           1
+i                                                                                 R4           1
+n                                                                                 R7           1
+complete                                                                          R2.1      1bit
+esc                                                                               R2.2      1bit
+_lcd_x                                                                            R6           1
+_lcd_y                                                                            R9           1
+_lcd_maxx                                                                         R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+keypad_init                                                                       0x000A3     21
+read_key                                                                          0x000B8     86
+timer0_ovf_isr                                                                    0x0010E     27
+timer2_ovf_isr                                                                    0x00129    274
+usart_rx_isr                                                                      0x0023B      1
+main                                                                              0x0023C     89
+PID_Setting                                                                       0x00295    221
+SetPoint_Adj                                                                      0x00372    137
+micro_init                                                                        0x003FB     51
+putchar                                                                           0x0042E      7
+put_usart_G100                                                                    0x00435     10
+put_buff_G100                                                                     0x0043F     58
+_ftoe_G100                                                                        0x00479    210
+_print_G100                                                                       0x0054B    533
+sprintf                                                                           0x00760     46
+printf                                                                            0x0078E     31
+ftoa                                                                              0x007AD    194
+_lcd_write_nibble_G102                                                            0x0086F     20
+_lcd_write_data                                                                   0x00883     12
+lcd_gotoxy                                                                        0x0088F     13
+lcd_clear                                                                         0x0089C     12
+lcd_putchar                                                                       0x008A8     21
+lcd_puts                                                                          0x008BD     15
+lcd_putsf                                                                         0x008CC     19
+lcd_init                                                                          0x008DF     46
+strcpyf                                                                           0x0090D     13
+strlen                                                                            0x0091A     12
+strlenf                                                                           0x00926     13
+ftrunc                                                                            0x00933     49
+floor                                                                             0x00964     23
